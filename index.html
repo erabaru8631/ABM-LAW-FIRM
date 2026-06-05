@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABM Law Firm | ARIF BIMANTARA MANAGEMENT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>ABM Law Firm - Solusi Hukum Profesional</title>
+    <!-- Font Elegan -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght=500;700;900&family=Inter:wght=300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- NAVIGASI UTAMA -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="gold-text">ABM</span> LAW FIRM
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#services">Layanan</a></li>
-                <li><a href="#consultation" class="btn-nav">Konsultasi Sekarang</a></li>
+            <a href="#" class="logo" onclick="switchPage('home')">ABM<span class="gold-text">.LAW</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="nav-item active" onclick="switchPage('home')">Beranda</a></li>
+                <li><a href="#" class="nav-item" onclick="switchPage('services')">Jasa & Layanan</a></li>
+                <li><a href="#" class="nav-item" onclick="switchPage('news')">Berita Hukum</a></li>
+                <li><a href="#" class="nav-item" onclick="switchPage('contact')">Konsultasi</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fas fa-bars"></i>
@@ -27,135 +28,183 @@
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>ARIF BIMANTARA MANAGEMENT</h1>
-            <p>Solusi Hukum Tepercaya, Profesional, dan Berintegritas Tinggi untuk Bisnis dan Personal Anda.</p>
-            <a href="#consultation" class="btn-primary">Jadwalkan Konsultasi <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </header>
-
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>Komitmen & Integritas Kami</h2>
-                    <div class="divider"></div>
-                    <p><strong>ABM (Arif Bimantara Management)</strong> adalah kantor hukum modern yang berdedikasi untuk memberikan layanan hukum berstandar tertinggi. Kami memahami bahwa setiap dinamika hukum memerlukan pendekatan yang strategis dan taktis.</p>
-                    <p>Didukung oleh advokat dan konsultan hukum berpengalaman, kami mendampingi klien korporasi maupun perorangan dalam menyelesaikan berbagai sengketa hukum secara efektif dan efisien.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-box">
-                        <h3>98%</h3>
-                        <p>Kasus Selesai</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>10+</h3>
-                        <p>Tahun Pengalaman</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>500+</h3>
-                        <p>Klien Puas</p>
-                    </div>
-                </div>
+    <!-- ================= HALAMAN 1: BERANDA ================= -->
+    <main id="page-home" class="page-content active">
+        <header class="hero">
+            <div class="hero-content">
+                <h1>ARIF BIMANTARA MANAGEMENT</h1>
+                <div class="divider-center"></div>
+                <p>Firma Hukum Progresif, Terpercaya, dan Berintegritas. Menyediakan Solusi Hukum Komprehensif untuk Korporasi maupun Perorangan.</p>
+                <a href="#" class="btn-primary" onclick="switchPage('services')">Lihat Jasa Kami <i class="fas fa-arrow-right"></i></a>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="services" class="services">
-        <div class="container">
+        <!-- Sekilas Berita Terbaru di Beranda -->
+        <section class="container">
             <div class="section-header">
-                <h2>Layanan Hukum Kami</h2>
-                <p>Kami menyediakan berbagai keahlian hukum untuk melindungi hak dan aset Anda.</p>
+                <h2>Sorotan Hukum Hari Ini</h2>
                 <div class="divider-center"></div>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-briefcase icon"></i>
-                    <h3>Hukum Bisnis & Korporasi</h3>
-                    <p>Pendirian perusahaan, perizinan, pembuatan kontrak kerja sama, merger & akuisisi, serta kepatuhan hukum (compliance).</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-gavel icon"></i>
-                    <h3>Litigasi & Penyelesaian Sengketa</h3>
-                    <p>Pendampingan hukum di pengadilan negeri, pengadilan niaga, hingga Mahkamah Agung untuk kasus perdata dan pidana.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-balance-scale icon"></i>
-                    <h3>Alternatif Penyelesaian Sengketa</h3>
-                    <p>Mediasi, negosiasi, dan arbitrase untuk mencapai solusi terbaik di luar jalur pengadilan formal.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-building icon"></i>
-                    <h3>Hukum Agraria & Properti</h3>
-                    <p>Pengurusan sengketa tanah, legalitas kepemilikan aset, serta hukum transaksi real estate/properti.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-users icon"></i>
-                    <h3>Hukum Keluarga & Waris</h3>
-                    <p>Penanganan hukum terkait perkawinan, perceraian, hak asuh anak, pembagian harta gono-gini, dan hukum waris.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <h3>Hak Kekayaan Intelektual (HKI)</h3>
-                    <p>Pendaftaran dan perlindungan hukum atas merek dagang, hak cipta, paten, dan desain industri bisnis Anda.</p>
+            <div class="news-highlight-grid">
+                <div class="news-card feature">
+                    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800" alt="Sidang">
+                    <div class="news-body">
+                        <span class="news-tag">Analisis Hukum</span>
+                        <h3>Arah Kebijakan Hukum Bisnis Digital di Indonesia Tahun 2026</h3>
+                        <p>Kupas tuntas regulasi terbaru mengenai kepatuhan data privasi perusahaan startup dan perlindungan konsumen elektronik.</p>
+                        <a href="#" class="btn-text" onclick="switchPage('news')">Baca Selengkapnya...</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="consultation" class="consultation">
-        <div class="container-small">
+    <!-- ================= HALAMAN 2: JASA & LAYANAN ================= -->
+    <main id="page-services" class="page-content">
+        <section class="container">
+            <div class="section-header">
+                <h2>Jasa & Layanan Hukum Kami</h2>
+                <p>Kami berkomitmen memberikan pembelaan dan edukasi hukum terbaik melalui media visual realitas kasus.</p>
+                <div class="divider-center"></div>
+            </div>
+
+            <!-- Video Profil / Representasi Jasa -->
+            <div class="video-section">
+                <h3>Video Representasi Penanganan Kasus</h3>
+                <div class="video-container">
+                    <video controls poster="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=1200">
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-gavel-hitting-a-sound-block-in-a-courtroom-41911-large.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Grid Jasa Dokumen & Litigasi -->
+            <div class="services-media-grid">
+                <div class="service-media-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" alt="Hukum Bisnis">
+                    </div>
+                    <div class="card-info">
+                        <h3><i class="fas fa-briefcase icon-gold"></i> Hukum Bisnis & Korporasi</h3>
+                        <p>Penyusunan kontrak dagang, merger, akuisisi, penanganan sengketa ketenagakerjaan, hingga legalitas izin usaha.</p>
+                    </div>
+                </div>
+
+                <div class="service-media-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=600" alt="Hukum Pidana">
+                    </div>
+                    <div class="card-info">
+                        <h3><i class="fas fa-gavel icon-gold"></i> Litigasi Pidana & Perdata</h3>
+                        <p>Pendampingan hukum di setiap tingkatan peradilan, mulai dari Kepolisian, Kejaksaan, hingga pembelaan di Pengadilan Negeri.</p>
+                    </div>
+                </div>
+
+                <div class="service-media-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600" alt="Properti">
+                    </div>
+                    <div class="card-info">
+                        <h3><i class="fas fa-home icon-gold"></i> Sengketa Properti & Agraria</h3>
+                        <p>Pengurusan validasi sertifikat tanah, penyelesaian kasus tumpang tindih lahan, serta eksekusi hak tanggungan dan waris.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= HALAMAN 3: PORTAL BERITA HUKUM ================= -->
+    <main id="page-news" class="page-content">
+        <section class="container">
+            <div class="section-header">
+                <h2>Pusat Informasi & Berita Hukum</h2>
+                <p>Edukasi publik mengenai dinamika hukum, undang-undang terbaru, dan analisis perkara hukum nasional.</p>
+                <div class="divider-center"></div>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?auto=format&fit=crop&q=80&w=600" alt="Berita 1">
+                    <div class="blog-body">
+                        <span class="date"><i class="far fa-calendar-alt"></i> 5 Juni 2026</span>
+                        <h3>Sah! Aturan Baru Mengenai Pajak UMKM Resmi Berlaku</h3>
+                        <p>Pemerintah mengeluarkan regulasi penyesuaian tarif pajak untuk mendukung stabilitas ekonomi pelaku usaha mikro.</p>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1521791136066-8984c72821e0?auto=format&fit=crop&q=80&w=600" alt="Berita 2">
+                    <div class="blog-body">
+                        <span class="date"><i class="far fa-calendar-alt"></i> 3 Juni 2026</span>
+                        <h3>Pentingnya Klausul Arbitrase dalam Kontrak Kerja Sama</h3>
+                        <p>Mengapa perusahaan wajib mencantumkan klausul arbitrase? Ini skema penyelesaian sengketa bisnis di luar jalur pengadilan formal.</p>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=600" alt="Berita 3">
+                    <div class="blog-body">
+                        <span class="date"><i class="far fa-calendar-alt"></i> 28 Mei 2026</span>
+                        <h3>Hak Asasi Pekerja Kontrak (PKWT) Menurut UU Cipta Kerja Terbaru</h3>
+                        <p>Penjelasan hukum komparatif mengenai uang kompensasi yang wajib diterima oleh pekerja waktu tertentu saat masa kontraknya berakhir.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= HALAMAN 4: KONTAK & KONSULTASI ================= -->
+    <main id="page-contact" class="page-content">
+        <section class="container-small">
             <div class="consultation-box">
-                <h2>Formulir Konsultasi Hukum</h2>
-                <p>Hubungi tim hukum kami untuk menganalisis kasus Anda. Kerahasiaan informasi Anda dijamin sepenuhnya oleh undang-undang.</p>
+                <h2>Ajukan Konsultasi Hukum</h2>
+                <p>Silakan isi formulir di bawah ini. Tim konsultan ABM Law Firm akan meninjau kronologi kasus Anda.</p>
+                
                 <form id="lawForm">
                     <div class="form-group">
-                        <label for="name">Nama Lengkap</label>
+                        <label for="name">Nama Lengkap Anda</label>
                         <input type="text" id="name" required placeholder="Contoh: Budi Santoso">
                     </div>
                     <div class="form-group">
-                        <label for="email">Alamat Email</label>
-                        <input type="email" id="email" required placeholder="Contoh: budi@email.com">
+                        <label for="email">Alamat Email Aktif</label>
+                        <input type="email" id="email" required placeholder="nama@email.com">
                     </div>
                     <div class="form-group">
-                        <label for="service-type">Kategori Masalah Hukum</label>
-                        <select id="service-type" required>
-                            <option value="">-- Pilih Kategori --</option>
-                            <option value="Korporasi">Hukum Bisnis & Korporasi</option>
-                            <option value="Litigasi">Litigasi / Sengketa Pengadilan</option>
-                            <option value="Properti">Agraria & Properti</option>
-                            <option value="Keluarga">Hukum Keluarga & Waris</option>
-                            <option value="Lainnya">Lainnya</option>
+                        <label for="service-type">Kategori Kasus/Jasa</label>
+                        <select id="service-type">
+                            <option value="Bisnis & Perusahaan">Hukum Bisnis & Perusahaan</option>
+                            <option value="Pidana / Perdata">Litigasi Perdata & Pidana Umum</option>
+                            <option value="Pertanahan & Rumah">Sengketa Pertanahan & Agraria</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Ringkasan Singkat Kasus</label>
-                        <textarea id="message" rows="5" required placeholder="Jelaskan secara singkat kronologi atau pertanyaan hukum Anda..."></textarea>
+                        <label for="message">Uraian Singkat Kasus</label>
+                        <textarea id="message" rows="5" required placeholder="Tuliskan detail masalah hukum Anda..."></textarea>
                     </div>
                     <button type="submit" class="btn-submit">Kirim Formulir Konsultasi</button>
                 </form>
                 <div id="form-response" class="hidden-message"></div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
+    <!-- FOOTER UNIVERSAL (DATA ASLI ABM) -->
     <footer>
         <div class="container footer-grid">
             <div class="footer-info">
                 <h3>ABM LAW FIRM</h3>
-                <p>ARIF BIMANTARA MANAGEMENT</p>
-                <p class="desc">Keadilan dan kepastian hukum adalah prioritas utama kami dalam melayani setiap klien.</p>
+                <p>Arif Bimantara Management</p>
+                <p class="desc">Menghadirkan keadilan dan kepastian hukum yang presisi bagi seluruh lapisan masyarakat dan entitas bisnis.</p>
             </div>
             <div class="footer-contact">
-                <h4>Hubungi Kami</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Sudirman Central Business District (SCBD), Jakarta, Indonesia</p>
-                <p><i class="fas fa-phone"></i> +62 21 5555 1234</p>
-                <p><i class="fas fa-envelope"></i> contact@abm-lawfirm.com</p>
+                <h4>Kantor Resmi Kami</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Jl Sultan Agung Gg.7 No.7 Jelak Ombo Jombang</p>
+                <p><i class="fas fa-phone-alt"></i> +628134528345</p>
+                <p><i class="fas fa-envelope"></i> arifbimantara@gmail.com</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ABM Law Firm (Arif Bimantara Management). All Rights Reserved.</p>
+            <p>&copy; 2026 ARIF BIMANTARA MANAGEMENT. All Rights Reserved.</p>
         </div>
     </footer>
 
