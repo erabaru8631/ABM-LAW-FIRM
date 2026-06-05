@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM Law Firm | ARIF BIMANTARA MANAGEMENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="gold-text">ABM</span> LAW FIRM
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#consultation" class="btn-nav">Konsultasi Sekarang</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>ARIF BIMANTARA MANAGEMENT</h1>
+            <p>Solusi Hukum Tepercaya, Profesional, dan Berintegritas Tinggi untuk Bisnis dan Personal Anda.</p>
+            <a href="#consultation" class="btn-primary">Jadwalkan Konsultasi <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Komitmen & Integritas Kami</h2>
+                    <div class="divider"></div>
+                    <p><strong>ABM (Arif Bimantara Management)</strong> adalah kantor hukum modern yang berdedikasi untuk memberikan layanan hukum berstandar tertinggi. Kami memahami bahwa setiap dinamika hukum memerlukan pendekatan yang strategis dan taktis.</p>
+                    <p>Didukung oleh advokat dan konsultan hukum berpengalaman, kami mendampingi klien korporasi maupun perorangan dalam menyelesaikan berbagai sengketa hukum secara efektif dan efisien.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>98%</h3>
+                        <p>Kasus Selesai</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>10+</h3>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>500+</h3>
+                        <p>Klien Puas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Layanan Hukum Kami</h2>
+                <p>Kami menyediakan berbagai keahlian hukum untuk melindungi hak dan aset Anda.</p>
+                <div class="divider-center"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-briefcase icon"></i>
+                    <h3>Hukum Bisnis & Korporasi</h3>
+                    <p>Pendirian perusahaan, perizinan, pembuatan kontrak kerja sama, merger & akuisisi, serta kepatuhan hukum (compliance).</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-gavel icon"></i>
+                    <h3>Litigasi & Penyelesaian Sengketa</h3>
+                    <p>Pendampingan hukum di pengadilan negeri, pengadilan niaga, hingga Mahkamah Agung untuk kasus perdata dan pidana.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-balance-scale icon"></i>
+                    <h3>Alternatif Penyelesaian Sengketa</h3>
+                    <p>Mediasi, negosiasi, dan arbitrase untuk mencapai solusi terbaik di luar jalur pengadilan formal.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building icon"></i>
+                    <h3>Hukum Agraria & Properti</h3>
+                    <p>Pengurusan sengketa tanah, legalitas kepemilikan aset, serta hukum transaksi real estate/properti.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users icon"></i>
+                    <h3>Hukum Keluarga & Waris</h3>
+                    <p>Penanganan hukum terkait perkawinan, perceraian, hak asuh anak, pembagian harta gono-gini, dan hukum waris.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt icon"></i>
+                    <h3>Hak Kekayaan Intelektual (HKI)</h3>
+                    <p>Pendaftaran dan perlindungan hukum atas merek dagang, hak cipta, paten, dan desain industri bisnis Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consultation" class="consultation">
+        <div class="container-small">
+            <div class="consultation-box">
+                <h2>Formulir Konsultasi Hukum</h2>
+                <p>Hubungi tim hukum kami untuk menganalisis kasus Anda. Kerahasiaan informasi Anda dijamin sepenuhnya oleh undang-undang.</p>
+                <form id="lawForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" required placeholder="Contoh: Budi Santoso">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" required placeholder="Contoh: budi@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="service-type">Kategori Masalah Hukum</label>
+                        <select id="service-type" required>
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="Korporasi">Hukum Bisnis & Korporasi</option>
+                            <option value="Litigasi">Litigasi / Sengketa Pengadilan</option>
+                            <option value="Properti">Agraria & Properti</option>
+                            <option value="Keluarga">Hukum Keluarga & Waris</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ringkasan Singkat Kasus</label>
+                        <textarea id="message" rows="5" required placeholder="Jelaskan secara singkat kronologi atau pertanyaan hukum Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Formulir Konsultasi</button>
+                </form>
+                <div id="form-response" class="hidden-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>ABM LAW FIRM</h3>
+                <p>ARIF BIMANTARA MANAGEMENT</p>
+                <p class="desc">Keadilan dan kepastian hukum adalah prioritas utama kami dalam melayani setiap klien.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Sudirman Central Business District (SCBD), Jakarta, Indonesia</p>
+                <p><i class="fas fa-phone"></i> +62 21 5555 1234</p>
+                <p><i class="fas fa-envelope"></i> contact@abm-lawfirm.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABM Law Firm (Arif Bimantara Management). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
